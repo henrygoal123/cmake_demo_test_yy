@@ -1,2 +1,11 @@
 E:/c_test/test02_cmake/cmake_demo_test_yy/build/CMakeFiles/edit_cache.dir
 E:/c_test/test02_cmake/cmake_demo_test_yy/build/CMakeFiles/rebuild_cache.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/CMakeFiles/main_test.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/CMakeFiles/edit_cache.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/CMakeFiles/rebuild_cache.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/process/CMakeFiles/process.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/process/CMakeFiles/edit_cache.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/process/CMakeFiles/rebuild_cache.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/map/CMakeFiles/map.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/map/CMakeFiles/edit_cache.dir
+E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/map/CMakeFiles/rebuild_cache.dir

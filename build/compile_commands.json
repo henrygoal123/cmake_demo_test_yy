@@ -1,0 +1,20 @@
+[
+{
+  "directory": "E:/c_test/test02_cmake/cmake_demo_test_yy/build/src",
+  "command": "\"D:\\software002\\Microsoft VS Code\\mingw64\\bin\\g++.exe\"  @CMakeFiles/main_test.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\main_test.dir\\main.cpp.obj -c E:\\c_test\\test02_cmake\\cmake_demo_test_yy\\src\\main.cpp",
+  "file": "E:/c_test/test02_cmake/cmake_demo_test_yy/src/main.cpp",
+  "output": "src/CMakeFiles/main_test.dir/main.cpp.obj"
+},
+{
+  "directory": "E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/process",
+  "command": "\"D:\\software002\\Microsoft VS Code\\mingw64\\bin\\g++.exe\" -Dprocess_EXPORTS @CMakeFiles/process.dir/includes_CXX.rsp -g -std=gnu++11 -o CMakeFiles\\process.dir\\process.cpp.obj -c E:\\c_test\\test02_cmake\\cmake_demo_test_yy\\src\\process\\process.cpp",
+  "file": "E:/c_test/test02_cmake/cmake_demo_test_yy/src/process/process.cpp",
+  "output": "src/process/CMakeFiles/process.dir/process.cpp.obj"
+},
+{
+  "directory": "E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/map",
+  "command": "\"D:\\software002\\Microsoft VS Code\\mingw64\\bin\\g++.exe\" -Dmap_EXPORTS  -g -std=gnu++11 -o CMakeFiles\\map.dir\\map.cpp.obj -c E:\\c_test\\test02_cmake\\cmake_demo_test_yy\\src\\map\\map.cpp",
+  "file": "E:/c_test/test02_cmake/cmake_demo_test_yy/src/map/map.cpp",
+  "output": "src/map/CMakeFiles/map.dir/map.cpp.obj"
+}
+]

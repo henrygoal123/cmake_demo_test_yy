@@ -2,7 +2,7 @@
 using namespace std;
 
 
-void Process::process(){
+void Process::proc(){
     cout<<"process s:"<<endl;
     m.map_info();
 }

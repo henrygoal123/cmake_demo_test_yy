@@ -1,8 +1,8 @@
+#pragma once
 #include <iostream>
-#include <fstream>
 using namespace std;
 
-class Map{
+class PNC_Map{
     public:
     void map_info();
 };

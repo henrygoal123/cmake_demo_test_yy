@@ -62,16 +62,145 @@ CMAKE_BINARY_DIR = E:\c_test\test02_cmake\cmake_demo_test_yy\build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all:
+all: src/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean:
+clean: src/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/main_test.dir/all
+src/all: src/process/all
+src/all: src/map/all
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall: src/process/preinstall
+src/preinstall: src/map/preinstall
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/main_test.dir/clean
+src/clean: src/process/clean
+src/clean: src/map/clean
+.PHONY : src/clean
+
+#=============================================================================
+# Directory level rules for directory src/map
+
+# Recursive "all" directory target.
+src/map/all: src/map/CMakeFiles/map.dir/all
+.PHONY : src/map/all
+
+# Recursive "preinstall" directory target.
+src/map/preinstall:
+.PHONY : src/map/preinstall
+
+# Recursive "clean" directory target.
+src/map/clean: src/map/CMakeFiles/map.dir/clean
+.PHONY : src/map/clean
+
+#=============================================================================
+# Directory level rules for directory src/process
+
+# Recursive "all" directory target.
+src/process/all: src/process/CMakeFiles/process.dir/all
+.PHONY : src/process/all
+
+# Recursive "preinstall" directory target.
+src/process/preinstall:
+.PHONY : src/process/preinstall
+
+# Recursive "clean" directory target.
+src/process/clean: src/process/CMakeFiles/process.dir/clean
+.PHONY : src/process/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/main_test.dir
+
+# All Build rule for target.
+src/CMakeFiles/main_test.dir/all: src/process/CMakeFiles/process.dir/all
+src/CMakeFiles/main_test.dir/all: src/map/CMakeFiles/map.dir/all
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\main_test.dir\build.make src/CMakeFiles/main_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\main_test.dir\build.make src/CMakeFiles/main_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles --progress-num=1,2 "Built target main_test"
+.PHONY : src/CMakeFiles/main_test.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/main_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/main_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles 0
+.PHONY : src/CMakeFiles/main_test.dir/rule
+
+# Convenience name for target.
+main_test: src/CMakeFiles/main_test.dir/rule
+.PHONY : main_test
+
+# clean rule for target.
+src/CMakeFiles/main_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\main_test.dir\build.make src/CMakeFiles/main_test.dir/clean
+.PHONY : src/CMakeFiles/main_test.dir/clean
+
+#=============================================================================
+# Target rules for target src/process/CMakeFiles/process.dir
+
+# All Build rule for target.
+src/process/CMakeFiles/process.dir/all: src/map/CMakeFiles/map.dir/all
+	$(MAKE) $(MAKESILENT) -f src\process\CMakeFiles\process.dir\build.make src/process/CMakeFiles/process.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\process\CMakeFiles\process.dir\build.make src/process/CMakeFiles/process.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles --progress-num=5,6 "Built target process"
+.PHONY : src/process/CMakeFiles/process.dir/all
+
+# Build rule for subdir invocation for target.
+src/process/CMakeFiles/process.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/process/CMakeFiles/process.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles 0
+.PHONY : src/process/CMakeFiles/process.dir/rule
+
+# Convenience name for target.
+process: src/process/CMakeFiles/process.dir/rule
+.PHONY : process
+
+# clean rule for target.
+src/process/CMakeFiles/process.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\process\CMakeFiles\process.dir\build.make src/process/CMakeFiles/process.dir/clean
+.PHONY : src/process/CMakeFiles/process.dir/clean
+
+#=============================================================================
+# Target rules for target src/map/CMakeFiles/map.dir
+
+# All Build rule for target.
+src/map/CMakeFiles/map.dir/all:
+	$(MAKE) $(MAKESILENT) -f src\map\CMakeFiles\map.dir\build.make src/map/CMakeFiles/map.dir/depend
+	$(MAKE) $(MAKESILENT) -f src\map\CMakeFiles\map.dir\build.make src/map/CMakeFiles/map.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles --progress-num=3,4 "Built target map"
+.PHONY : src/map/CMakeFiles/map.dir/all
+
+# Build rule for subdir invocation for target.
+src/map/CMakeFiles/map.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/map/CMakeFiles/map.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c_test\test02_cmake\cmake_demo_test_yy\build\CMakeFiles 0
+.PHONY : src/map/CMakeFiles/map.dir/rule
+
+# Convenience name for target.
+map: src/map/CMakeFiles/map.dir/rule
+.PHONY : map
+
+# clean rule for target.
+src/map/CMakeFiles/map.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src\map\CMakeFiles\map.dir\build.make src/map/CMakeFiles/map.dir/clean
+.PHONY : src/map/CMakeFiles/map.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

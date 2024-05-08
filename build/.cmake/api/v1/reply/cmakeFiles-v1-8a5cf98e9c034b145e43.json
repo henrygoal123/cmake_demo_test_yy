@@ -149,6 +149,15 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "D:/software002/Microsoft VS Code/cmake/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "src/CMakeLists.txt"
+		},
+		{
+			"path" : "src/process/CMakeLists.txt"
+		},
+		{
+			"path" : "src/map/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",

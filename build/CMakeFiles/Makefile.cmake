@@ -34,6 +34,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.3/CMakeRCCompiler.cmake"
   "CMakeFiles/3.29.3/CMakeSystem.cmake"
+  "E:/c_test/test02_cmake/cmake_demo_test_yy/src/CMakeLists.txt"
+  "E:/c_test/test02_cmake/cmake_demo_test_yy/src/map/CMakeLists.txt"
+  "E:/c_test/test02_cmake/cmake_demo_test_yy/src/process/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -45,8 +48,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/process/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/map/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "src/CMakeFiles/main_test.dir/DependInfo.cmake"
+  "src/process/CMakeFiles/process.dir/DependInfo.cmake"
+  "src/map/CMakeFiles/map.dir/DependInfo.cmake"
   )

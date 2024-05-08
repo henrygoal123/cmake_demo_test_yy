@@ -1,8 +1,10 @@
+#include <iostream>
 #include "process.h"
 using namespace std;
 
 int main(){
     Process p;
-    p.process();
+    p.proc();
+    cout << "test"<<endl;
     return 0;
 }

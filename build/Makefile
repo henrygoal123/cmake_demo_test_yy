@@ -115,6 +115,45 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named main_test
+
+# Build rule for target.
+main_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 main_test
+.PHONY : main_test
+
+# fast build rule for target.
+main_test/fast:
+	$(MAKE) $(MAKESILENT) -f src\CMakeFiles\main_test.dir\build.make src/CMakeFiles/main_test.dir/build
+.PHONY : main_test/fast
+
+#=============================================================================
+# Target rules for targets named process
+
+# Build rule for target.
+process: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 process
+.PHONY : process
+
+# fast build rule for target.
+process/fast:
+	$(MAKE) $(MAKESILENT) -f src\process\CMakeFiles\process.dir\build.make src/process/CMakeFiles/process.dir/build
+.PHONY : process/fast
+
+#=============================================================================
+# Target rules for targets named map
+
+# Build rule for target.
+map: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 map
+.PHONY : map
+
+# fast build rule for target.
+map/fast:
+	$(MAKE) $(MAKESILENT) -f src\map\CMakeFiles\map.dir\build.make src/map/CMakeFiles/map.dir/build
+.PHONY : map/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -123,6 +162,9 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... main_test
+	@echo ... map
+	@echo ... process
 .PHONY : help
 
 

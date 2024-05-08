@@ -20,6 +20,10 @@ CMAKE_ADDR2LINE:FILEPATH=D:/software002/Microsoft VS Code/mingw64/bin/addr2line.
 //Path to a program.
 CMAKE_AR:FILEPATH=D:/software002/Microsoft VS Code/mingw64/bin/ar.exe
 
+//For backwards compatibility, what version of CMake commands and
+// syntax should this version of CMake try to support.
+CMAKE_BACKWARDS_COMPATIBILITY:STRING=2.4
+
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
@@ -156,7 +160,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=demo_test
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=D:/software002/Microsoft VS Code/mingw64/bin/ranlib.exe
@@ -241,6 +245,12 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Single output directory for building all executables.
+EXECUTABLE_OUTPUT_PATH:PATH=
+
+//Single output directory for building all libraries.
+LIBRARY_OUTPUT_PATH:PATH=
+
 //Value Computed by CMake
 Project_BINARY_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/build
 
@@ -249,6 +259,45 @@ Project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy
+
+//Value Computed by CMake
+demo_test_BINARY_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/build
+
+//Value Computed by CMake
+demo_test_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+demo_test_SOURCE_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy
+
+//Value Computed by CMake
+main_test_BINARY_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/build/src
+
+//Value Computed by CMake
+main_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+main_test_SOURCE_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/src
+
+//Value Computed by CMake
+map_BINARY_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/map
+
+//Value Computed by CMake
+map_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+map_SOURCE_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/src/map
+
+//Value Computed by CMake
+process_BINARY_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/build/src/process
+
+//Value Computed by CMake
+process_IS_TOP_LEVEL:STATIC=OFF
+
+//Dependencies for the target
+process_LIB_DEPENDS:STATIC=general;map;
+
+//Value Computed by CMake
+process_SOURCE_DIR:STATIC=E:/c_test/test02_cmake/cmake_demo_test_yy/src/process
 
 
 ########################
@@ -357,7 +406,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
